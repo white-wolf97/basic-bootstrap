@@ -1,0 +1,12 @@
+$primary: #0584fa;
+$secondary: #d1d1d1;
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+$custom-theme-colors: (
+	'black': #000000,
+	'white': #ffffff,
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
