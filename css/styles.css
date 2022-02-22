@@ -32,6 +32,9 @@
 #charts {
 	height: 100vh;
 }
+#bestSellingTitle {
+	margin-bottom: 40px;
+}
 
 @media screen and (max-width: 767px) {
 	.carousel,
@@ -41,7 +44,7 @@
 		height: 50vh;
 	}
 
-	.carousel-caption > h5 {
+	.customTitle {
 		font-size: 36px;
 		font-weight: 300;
 		line-height: 1.2;
@@ -49,6 +52,12 @@
 
 	#col1,
 	#col2 {
-		height: 100vh;
+		height: 100%;
+		box-sizing: border-box;
+	}
+
+	.accordion-body {
+		max-height: 300px;
+		overflow-y: scroll;
 	}
 }

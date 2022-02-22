@@ -4,8 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./css/main.min.css" type="text/css" />
 		<link rel="stylesheet" href="./css/styles.css" type="text/css" />
+		<link rel="stylesheet" href="./css/main.min.css" type="text/css" />
 		<title>Music Top 50</title>
 	</head>
 	<body>
@@ -29,7 +29,7 @@
 				>
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
+							<a class="nav-link active" aria-current="page" href="#">Inicio</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">Videoclips</a>
@@ -45,11 +45,11 @@
 								data-bs-toggle="dropdown"
 								aria-expanded="false"
 							>
-								About us
+								Nosotros
 							</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="#">Contact</a></li>
-								<li><a class="dropdown-item" href="#">More info</a></li>
+								<li><a class="dropdown-item" href="#">Contacto</a></li>
+								<li><a class="dropdown-item" href="#">Más info</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -90,7 +90,7 @@
 						<div class="imageCover" id="img1"></div>
 						<div class="container">
 							<div class="carousel-caption d-block">
-								<h5 class="display-1">1. MAMIII</h5>
+								<h5 class="display-1 customTitle">1. MAMIII</h5>
 								<p>Karol G & Becky G</p>
 							</div>
 						</div>
@@ -136,9 +136,148 @@
 		</div>
 
 		<div class="mx-0 px-0 container-xxl" id="charts">
-			<div class="row mx-0 h-100">
-				<div class="px-0 col-12 col-md-6 bg-black border-1" id="col1"></div>
-				<div class="px-0 col-12 col-md-6 bg-white border-1" id="col2"></div>
+			<div class="row mx-0 h-100 justify-content-center">
+				<div
+					class="p-4 col-12 col-md-6 bg-black d-flex flex-column justify-content-center"
+					id="col1"
+				>
+					<div>
+						<h5
+							class="customTitle display-5 text-white text-center"
+							id="bestSellingTitle"
+						>
+							Artistas más vendidos del 2022
+						</h5>
+						<div
+							class="accordion align-self-center w-100"
+							id="accordionExample"
+						>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingOne">
+									<button
+										class="accordion-button"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseOne"
+										aria-expanded="true"
+										aria-controls="collapseOne"
+									>
+										1. Lit Killah
+									</button>
+								</h2>
+								<div
+									id="collapseOne"
+									class="accordion-collapse collapse show"
+									aria-labelledby="headingOne"
+									data-bs-parent="#accordionExample"
+								>
+									<div class="accordion-body">
+										Tempore ipsa iusto eveniet fugit aliquid magni ducimus ullam
+										quibusdam, at, illum modi quasi? Facere, laudantium sunt.
+										Quam magni temporibus, fugit sapiente tempore mollitia animi
+										vitae dignissimos ipsam eveniet doloremque veniam et! Dolore
+										hic excepturi amet repudiandae iure iusto eligendi
+										consectetur enim omnis dolores cupiditate, nobis voluptatum
+										molestias quidem! Sint rem nam aspernatur, fugiat esse est
+										fuga eveniet laboriosam alias earum! Voluptatibus pariatur
+										voluptatum quasi assumenda incidunt molestias libero ex
+										dolorem dolor, molestiae, quo iusto tempora distinctio. In,
+										laboriosam.
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingTwo">
+									<button
+										class="accordion-button collapsed"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseTwo"
+										aria-expanded="false"
+										aria-controls="collapseTwo"
+									>
+										2. Bizarrap
+									</button>
+								</h2>
+								<div
+									id="collapseTwo"
+									class="accordion-collapse collapse"
+									aria-labelledby="headingTwo"
+									data-bs-parent="#accordionExample"
+								>
+									<div class="accordion-body">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Necessitatibus dicta similique quod obcaecati dolores culpa
+										ipsa dolore aperiam fuga iusto cupiditate, vero aspernatur
+										recusandae laudantium. A esse, laborum blanditiis quasi
+										excepturi maiores commodi iusto earum placeat? Dolorem
+										reprehenderit repellat voluptas nostrum? Culpa dolorem
+										labore cumque! Cum amet nesciunt quisquam id!
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingThree">
+									<button
+										class="accordion-button collapsed"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseThree"
+										aria-expanded="false"
+										aria-controls="collapseThree"
+									>
+										3. Maria Becerra
+									</button>
+								</h2>
+								<div
+									id="collapseThree"
+									class="accordion-collapse collapse"
+									aria-labelledby="headingThree"
+									data-bs-parent="#accordionExample"
+								>
+									<div class="accordion-body">
+										Culpa ipsa dolore aperiam fuga iusto cupiditate, vero
+										aspernatur recusandae laudantium. A esse, laborum blanditiis
+										quasi excepturi maiores commodi iusto earum placeat? Dolorem
+										reprehenderit repellat voluptas nostrum? Culpa dolorem
+										labore cumque! Cum amet nesciunt quisquam id!
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="p-4 col-12 col-md-6 bg-white d-flex flex-column justify-content-center"
+					id="col2"
+				>
+					<div>
+						<h5
+							class="customTitle display-5 text-black text-center"
+							id="bestSellingTitle"
+						>
+							Canciones más escuchadas
+						</h5>
+
+						<ul class="list-group">
+							<li class="list-group-item">4. Bar - TINI y L-Gante</li>
+							<li class="list-group-item">
+								5. Tiago PZK BZRP - Tiago PZK y Bizarrap
+							</li>
+							<li class="list-group-item">
+								6. Tranquila - FMK y Maria Becerra
+							</li>
+							<li class="list-group-item">7. Funky de antes - Letan y Menor</li>
+							<li class="list-group-item">
+								8. Salimo en caravana - The La Planta
+							</li>
+							<li class="list-group-item">
+								9. Esto recién empieza - Duki y Emilia
+							</li>
+							<li class="list-group-item">10. Top 5 - Duki</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 
