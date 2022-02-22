@@ -28,12 +28,90 @@
 #img3 {
 	background-image: url('../images/3.jpg');
 }
-
-#charts {
+#col1,
+#col2 {
 	height: 100vh;
 }
+
+#charts,
+#emergentArtists {
+	height: 100vh;
+}
+#emergentArtistsRow {
+	padding: 20px;
+	height: 90%;
+}
+
+#emergentArtistTitle {
+	height: 10%;
+}
+
 #bestSellingTitle {
 	margin-bottom: 40px;
+}
+
+.emergentArtistImage {
+	background-size: cover;
+	width: auto;
+	height: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#wosImage {
+	background-image: url('../images/wos.jpg');
+}
+
+#nathyImage {
+	background-image: url('../images/nathyPeluso.jpg');
+}
+
+#nickiImage {
+	background-image: url('../images/nickiNicole.jpg');
+}
+
+#cazzuImage {
+	background-image: url('../images/cazzu.png');
+}
+
+.card {
+	height: 550px;
+	position: relative;
+}
+
+.card-img-top {
+	height: 50%;
+}
+
+.text-with-ellipsis {
+	display: -webkit-box !important;
+
+	-webkit-box-orient: vertical;
+
+	text-overflow: ellipsis !important;
+
+	overflow: hidden;
+}
+
+.text-2-lines {
+	-webkit-line-clamp: 2 !important;
+}
+
+.text-4-lines {
+	-webkit-line-clamp: 4 !important;
+}
+
+.card-button {
+	position: absolute;
+	bottom: 20px;
+}
+
+.card-body {
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
 }
 
 @media screen and (max-width: 767px) {
@@ -59,5 +137,17 @@
 	.accordion-body {
 		max-height: 300px;
 		overflow-y: scroll;
+	}
+
+	#charts {
+		height: 200vh;
+	}
+
+	.card {
+		margin: 20px 0 20px 20px;
+	}
+
+	.text-with-ellipsis {
+		-webkit-line-clamp: 5 !important;
 	}
 }
