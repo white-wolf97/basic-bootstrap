@@ -1,0 +1,54 @@
+.carousel,
+.carousel-inner,
+.imageCover,
+.container-fluid {
+	height: 95vh;
+}
+
+.imageCover {
+	background-size: cover;
+	width: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	filter: brightness(60%);
+}
+
+.row {
+	width: 100vw;
+}
+
+#img1 {
+	background-image: url('../images/1.jpg');
+}
+
+#img2 {
+	background-image: url('../images/2.jpg');
+}
+
+#img3 {
+	background-image: url('../images/3.jpg');
+}
+
+#charts {
+	height: 100vh;
+}
+
+@media screen and (max-width: 767px) {
+	.carousel,
+	.carousel-inner,
+	.imageCover,
+	.container-fluid {
+		height: 50vh;
+	}
+
+	.carousel-caption > h5 {
+		font-size: 36px;
+		font-weight: 300;
+		line-height: 1.2;
+	}
+
+	#col1,
+	#col2 {
+		height: 100vh;
+	}
+}
