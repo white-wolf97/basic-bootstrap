@@ -1,7 +1,7 @@
 .carousel,
 .carousel-inner,
 .imageCover,
-.container-fluid {
+#carouselContainer {
 	height: 95vh;
 }
 
@@ -33,8 +33,7 @@
 	height: 100vh;
 }
 
-#charts,
-#emergentArtists {
+#charts {
 	height: 100vh;
 }
 #emergentArtistsRow {
@@ -114,12 +113,30 @@
 	justify-content: space-between;
 }
 
-@media screen and (max-width: 767px) {
+.accordion-body {
+	max-height: 250px;
+	overflow-y: scroll;
+}
+
+@media screen and (min-width: 769px) {
+	#emergentArtists {
+		height: 100vh;
+	}
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
 	.carousel,
 	.carousel-inner,
 	.imageCover,
-	.container-fluid {
+	#carouselContainer {
 		height: 50vh;
+	}
+
+	#rowCharts {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.customTitle {
@@ -128,15 +145,38 @@
 		line-height: 1.2;
 	}
 
-	#col1,
-	#col2 {
-		height: 100%;
-		box-sizing: border-box;
+	#charts {
+		height: 200vh;
 	}
 
-	.accordion-body {
-		max-height: 300px;
-		overflow-y: scroll;
+	.card {
+		margin: 20px 0 20px 20px;
+	}
+
+	.text-with-ellipsis {
+		-webkit-line-clamp: 3 !important;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.carousel,
+	.carousel-inner,
+	.imageCover,
+	#carouselContainer {
+		height: 50vh;
+	}
+
+	#rowCharts {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.customTitle {
+		font-size: 36px;
+		font-weight: 300;
+		line-height: 1.2;
 	}
 
 	#charts {
